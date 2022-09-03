@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> <!-- atributos de la pag web-->
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href=reset.css> <!--es un archivo que permite eliminar algunos parametros del navegador, se debe instalar antes de style-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header> <!--encabezado-->
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="Logo imagen de Barbería Alura"></h1>
+                <nav><!-- esta etiqueta permite que lo que se encuentre dentro de ella se formara como boton y tenga la funcion de navegar-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!--<a> sirve para que sea un vinculo que nos lleva a una pagina distinta-->
+                        <li><a href="productos.html">Productos</a> </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label> <!--genera el texto y realaciona con el for el input-->
+                <input type="text" id="nombreapellido" class="input-padre" required> <!--esta etiqueta genera una caja para ingresar datos del usuario-->
+                
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" class="input-padre" required placeholder="email@dominio.com"><!--required es una etiqueta que hace obligatorio diligenciar los campos-->
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padre" required placeholder="(XXX)XXXXXXX"><!---placeholder permite dejar en el input una muestra al usuario de lo que debe ingresar-->
+
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" cols="70" rows="10" class="input-padre" required></textarea> <!--textarea genera una caja modificable al usuario-->
+                
+                <fieldset>
+                    <legend>¿Como le gustaria ser contactado?</legend>
+                
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email"> <!--permite generar un input de seleccion-->E-mail</label>
+                    
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                     
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                     
+                </fieldset>
+
+                <fieldset>
+                    <legend class="horario">¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de Barbería Alura? </label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar"> <!--genera el boton de enviar-->
+            </form>
+
+            <table>
+                <thead> <!--sirve para  dar encabezado a la tabla-->
+                    <tr> <!--table row indica filas de la tabla-->
+                        <th>Dias de atencion</th> 
+                        <th>Horarios de Atencion</th>
+                    </tr>
+                </thead>
+    
+                <tbody> <!--esta etiqueta da cuerpo a la tabla-->
+                    <tr>
+                        <td>Lunes</td> <!--permite ingresar txt a las filas-->
+                        <td>De 08:00 am ~ 08:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>De 08:00 am ~ 08:00 pm</td>>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>De 08:00 am ~ 08:00 pm</td>
+                    </tr>
+                </tbody>
+            </table>          
+
+        </main>
+        
+        <footer>
+            ><img src="imagenes/logo-blanco.png" alt="Logo imagen de Barbería Alura">
+            <p class="copyrigth">&copy Copyrigth Barbería Alura - 2020</p>
+        </footer>
+
+    </body> 
+</html>

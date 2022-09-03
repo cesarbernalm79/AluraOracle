@@ -1,0 +1,143 @@
+header{
+    background-color: #ffa500;
+    padding: 20px 0 ;
+}
+
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /* genera margenes arriba, derecha, abajo, izquierda respectivamente*/
+}
+
+nav a{
+    text-transform: uppercase; /* cambia el texto a mayusculas */
+    color: #000000;
+    font-weight: bold; /* deja el texto en negrilla*/
+    font-size: 22px; /* tamaño del texto*/
+    text-decoration: none; /* quita la decoracion y/o subrayado del txt*/
+}
+
+nav a:hover{ /* a:hover captura el movimiento de mouse del usuario*/
+    color: blue;
+    text-decoration: underline; /* genera subrayado en el texto*/
+    font-size: 24px;
+}
+
+#banner{
+    width:100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration:underline;
+    margin: 15px 0;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color:red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold; 
+    padding: 10px 10px;
+    
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 35%;
+    border-radius: 20px;
+    margin: auto 150px;
+    
+}
+
+
+
+table{
+    margin: 15px auto;
+    transition: 1s all;
+    width: 40%;
+    text-align: center;
+    padding: 25px 15px;
+    
+    
+}
+
+thead{
+    background: orange;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+}
+
+td, th{
+    border: 2px solid black;
+    padding: 10px 25px;
+    
+}
+
+td{
+    background: #BBBBBB;
+    font-style: oblique;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+table:hover{
+    transform: scale(1.1);
+}
+
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyrigth{
+    color: yellow;
+    font-size: 13px;
+    margin: 20px;
+}
+

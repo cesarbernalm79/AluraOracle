@@ -1,0 +1,324 @@
+body{
+    font-family: 'Courgette', cursive;
+    color: black;
+}
+
+header{
+    background-color: #7a61ab;
+    padding: 20px 0 ;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /* genera margenes arriba, derecha, abajo, izquierda respectivamente*/
+}
+
+nav a{
+    text-transform: uppercase; /* cambia el texto a mayusculas */
+    color: #000000;
+    font-weight: bold; /* deja el texto en negrilla*/
+    font-size: 22px; /* tamaño del texto*/
+    text-decoration: none; /* quita la decoracion y/o subrayado del txt*/
+}
+
+nav a:hover{ /* a:hover captura el movimiento de mouse del usuario*/
+    color: lightgreen;
+    text-decoration: underline; /* genera subrayado en el texto*/
+    font-size: 24px;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* permite que las cajas sean organizadas */
+    /* los border le da la apariencia de las cajas de los productos*/
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px; /*permite redondear las esquinas de los cuadros de losproductos*/
+}
+.productos li:hover{
+    border-color: blue;
+    }
+
+.productos li:active{
+    border-color: orange;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyrigth{
+    color: yellow;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px 10px 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.input-padre{ /* de esta manera se unen todos los formatos de input del las mismas proporciones separando con una,*/
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 30px;
+    width: 50%;
+}
+
+.horario{
+    padding: 10px 0;
+}
+option{
+    font-style:normal;
+    font-weight: bolder;
+}
+
+.checkbox{
+    margin: 30px 0;
+}
+.enviar{
+    width: 40%; /* tamaño de la caja de enviar formulario */
+    padding: 15px 0; /* espaciamiento del txt en la caja, 15px arriba/abajo, 0 laterales */
+    font-size: 18px; /* tamaño txt*/
+    font-style: italic; /* letra inclinada */
+    font-weight: bold; /* negrilla*/
+    color: aquamarine; /* color del txt*/
+    background: #007fff; /* color de fondo de la caja */
+    border: none; /* elimina los bordes de la caja */
+    border-radius: 20px; /* bordea las esquinas de la caja por medio del radio */
+    transition: 1s all; /* este atributo hace la transicion de color tamaño y txt por defecto al puesto en el hover */
+    cursor:pointer; /* este atributo cambia la flecha por la manito en el cursor*/
+}
+
+.enviar:hover{
+    background: purple;
+    color: whitesmoke;
+    transform: scale(1.1); /* aumenta tamaño de la caja cuando pasa sobre él el cursor */
+}
+
+
+table{
+    margin: 20px auto;
+    transition: 1s all;
+    width: 45%;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+thead{
+    background: orange;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+}
+
+td, th{
+    border: 2px solid black;
+}
+
+td{
+    background: #BBBBBB;
+    font-style: oblique;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+table:hover{
+    transform: scale(1.1);
+}
+
+/* ACA INICIA EL CSS DE ESTYLO DEL HOME */
+
+.banner{
+    width: 100%;
+}
+
+/* main > p = selecciona y aplica el cambio solo al parrafo que es hijo del main*/
+/* img + p = así aplica solo a los elementos hermanos o que son del mismo nivel para este caso al primer parrafo*/
+/* img ~ p = asi aplicaria el cambio a todos los parrafos hermanos o del mismo nivel*/
+
+
+.principal{
+    padding: 3em 0;
+    background: #e8d8ff;
+    width: 940px; /*la pantalla total tiene 1270px el valor de 940 es para que trabaje sobre ese rango*/
+    margin: 0 0 1em; 
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* con (2em) estamos pidiendo que multiplique por 2 el tamaño que viene por defecto de la letra*/
+    margin: 0 0 1em; /* 0 arriba, 0 derecha, 1em abajo, 0 izquierda*/
+    clear: left;
+    text-shadow: 2px 2px 10px purple;
+}
+
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.principal strong{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 160px;
+    float: left; /*sirve para que en la imagen elementos de texto o elementos en línea se posicionan alrededor de él*/
+    margin: 0 20px 20px 0;
+    border-radius: 20px;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#e8d8ff , #7250c0);
+    /* linear-gradient= permite hacer degradacion de los colores, se puede añadir alguna inclinacion en grados(radios)*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 0px;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+.lista-diferenciales{
+    width: 38%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 2em;
+    font-style: italic;
+}
+
+.items:before{
+    content: "٭";
+}
+
+.items:after{
+    content: "٭";
+}
+
+.items:nth-child(1){ /* nth-child no permite seleccionar un item de la lista y darle estilos distintos a los demas*/
+    font-weight: bold;   
+}
+
+.imagen-diferenciales{
+    width: 58%;
+    border-radius: 15px;
+}
+
+.imagen-diferenciales:hover{
+    border-radius: 30px;
+    opacity: 0.5;
+    transition: 700ms;
+    box-shadow: 10px 10px 30px 8px black;
+    /* el primer 10px es eje horizontal, el segundo 10px es eje vertical, el tercer 30px es la difuminacion, el cuarto parametro 8px es la expansion de la difuminacion y el quinto parametro es el color*/
+}
+
+.video{
+    width: 560px;/*tamaño del video*/
+    margin: 2em auto;
+    background: linear-gradient(#7250c0, #e8d8ff)
+}
+
+
+
+/* esta funcion nos sirve para adaptar los tamaños de las imagenes y textos cuando 
+se visita la pag desde un telefono */
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+            width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
+
+
+
